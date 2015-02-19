@@ -10,6 +10,9 @@ namespace MathFlash
     {
         static void Main(string[] args)
         {
+            PlayMathFlash play = new PlayMathFlash();
+            play.Run();
+
         }
     }
 }
