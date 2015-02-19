@@ -11,7 +11,7 @@ namespace MathFlash
         ViewMathFlash view = new ViewMathFlash();
         List<MathFlash> _FlashMath = new List<MathFlash>();
 
-        public void Play()
+        public void Run()
         {
 
         }
