@@ -10,6 +10,7 @@ namespace MathFlash
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please enter any key to get started");
         }
     }
 }
