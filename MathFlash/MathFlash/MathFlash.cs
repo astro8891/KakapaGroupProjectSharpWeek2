@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace MathFlash
 {
-    class MathFlash
+    public class MathFlash
     {
+
         public string Operator { get; set; }
         public int Number1 { get; set; }
         public int Number2 { get; set; }
@@ -19,7 +20,8 @@ namespace MathFlash
             this.Number1 = Number1;
             this.Number2 = Number2;
             this.Answer = Answer;
-        }
+
+            }
     }
 }
 
