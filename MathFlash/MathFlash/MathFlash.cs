@@ -20,6 +20,7 @@ namespace MathFlash
             this.Number2 = Number2;
             this.Answer = Answer;
         }
+
     }
 }
 

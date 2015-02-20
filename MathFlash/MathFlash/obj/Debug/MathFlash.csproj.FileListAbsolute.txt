@@ -1,0 +1,9 @@
+C:\Users\user\Documents\GitHub\kakapo\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\bin\Debug\MathFlash.exe.config
+C:\Users\user\Documents\GitHub\kakapo\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\bin\Debug\MathFlash.exe
+C:\Users\user\Documents\GitHub\kakapo\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\bin\Debug\MathFlash.pdb
+C:\Users\user\Documents\GitHub\kakapo\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\obj\Debug\MathFlash.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitHub\kakapo\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\obj\Debug\MathFlash.exe
+C:\Users\user\Documents\GitHub\kakapo\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\obj\Debug\MathFlash.pdb
+C:\Users\mursa_000\Desktop\kakapo\week2\5\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\bin\Debug\MathFlash.exe.config
+C:\Users\mursa_000\Desktop\kakapo\week2\5\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\obj\Debug\MathFlash.exe
+C:\Users\mursa_000\Desktop\kakapo\week2\5\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\obj\Debug\MathFlash.pdb

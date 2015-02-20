@@ -29,6 +29,7 @@ namespace MathFlash
         public string Incorrect()
         {
             Console.WriteLine(Environment.NewLine+"Incorrect! Try again.");
+            Console.WriteLine("It has to be a number between 0-9 or 'previous'");
             return Console.ReadLine();
         }
         public void Correct()
