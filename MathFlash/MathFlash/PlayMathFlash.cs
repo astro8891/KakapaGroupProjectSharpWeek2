@@ -11,6 +11,8 @@ namespace MathFlash
         Random rnd = new Random();
         ViewMathFlash view = new ViewMathFlash();
         List<MathFlash> _MathFlash = new List<MathFlash>();
+        public int Score { get; set; }
+        public int NumberOfQuestions { get; set; }
 
         string _operator;
         string _userSays;
@@ -33,7 +35,7 @@ namespace MathFlash
                 while (_userSays != _answer.ToString())
                 {
                     if (_attempts != 3) { _userSays = view.Incorrect(); _attempts++; }
-                    else { _attempts = 0; goto NextProb; }
+                    else { _attempts = 0; Score++; NumberOfQuestions++; goto NextProb; }
                 }
                 view.Correct();
             NextProb: ;
@@ -68,6 +70,7 @@ namespace MathFlash
             _number1 = rnd.Next(0, 9);
             _number2 = rnd.Next(0, 9);
         }
-        
+
+
     }
 }
