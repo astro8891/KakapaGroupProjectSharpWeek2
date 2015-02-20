@@ -12,6 +12,8 @@ namespace MathFlash
         {
             PlayMathFlash play = new PlayMathFlash();
             play.Run();
+            Console.WriteLine("Hit [Enter] to exit");
+            Console.ReadLine();
 
         }
     }

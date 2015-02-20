@@ -14,7 +14,8 @@ namespace MathFlash
             Console.WriteLine("This game has certain rules, they are as follows:");
             Console.WriteLine("You may choose to play with addition or subtraction.");
             Console.WriteLine("Please only enter digits or 'previous' to answer the previous question asked.");
-            Console.WriteLine("");
+            
+             Console.WriteLine("");
         }
         public string GetOperator()
         {
@@ -42,14 +43,12 @@ namespace MathFlash
             Console.WriteLine(Environment.NewLine+"OOPS!! Something went wrong please re-enter selection.");
         }
 
-        public void WriteFinalScore(int question, int score, int attempts)
+        public void WriteFinalScore(int score, int attempts)
         {
-            Console.WriteLine("Your final score is {0} out of {1}", score, question);
-            Console.WriteLine("With {0} attempts",attempts);
+            Console.WriteLine("Your final score is {0} out of {1} attempts", score, attempts);
             Console.WriteLine();
             Console.WriteLine("==============Metrics==============");
-            Console.WriteLine("Percentage: {0}", score/question*100);
-            Console.WriteLine("HitRate: {0}", attempts/question);
+            Console.WriteLine("Percentage: {0}", Math.Floor(Convert.ToDecimal(score) / Convert.ToDecimal(attempts) * 100));
         }
     }
 }
