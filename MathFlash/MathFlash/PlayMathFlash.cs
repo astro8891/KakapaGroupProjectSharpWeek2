@@ -43,6 +43,7 @@ namespace MathFlash
                 GetAnswer();
                 AddToList();
             }
+            view.WriteFinalScore(NumberOfQuestions, Score, Attempts);
         }
         public void AddToList()
         {
