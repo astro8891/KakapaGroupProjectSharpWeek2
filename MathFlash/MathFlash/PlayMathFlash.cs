@@ -9,19 +9,12 @@ namespace MathFlash
     class PlayMathFlash
     {
         ViewMathFlash view = new ViewMathFlash();
-        List<MathFlash> _MathFlash = new List<MathFlash>();
-        string Operator;
+        List<MathFlash> _FlashMath = new List<MathFlash>();
 
         public void Run()
         {
-            Operator = view.GetOperator();
-            if (Operator != "+" && Operator != "-") { Operator = view.GetOperator(); }
+            //runs the program
 
-
-        }
-        public void AddToList()
-        {
-            //_MathFlash.Add(new MathFlash( ));
         }
     }
 }
