@@ -20,7 +20,24 @@ namespace MathFlash
             Console.WriteLine(Environment.NewLine+"Please enter + or - depending on what you want to do:");
             return Console.ReadLine();
         }
-     
+        public string UserPlay(string op, int num1, int num2)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Question:");
+            Console.WriteLine("{0} {1} {2}", num1, op, num2);
+            return Console.ReadLine();
+        }
+        public string Incorrect()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Incorrect! Try again.");
+            return Console.ReadLine();
+        }
+        public void Correct()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Correct!!");
+        }
 
     }
 }
