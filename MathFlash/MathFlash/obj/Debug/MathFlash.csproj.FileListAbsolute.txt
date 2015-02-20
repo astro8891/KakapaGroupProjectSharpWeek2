@@ -1,6 +1,0 @@
-C:\Users\mursa_000\Desktop\Kakapo\Week2\5\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\obj\Debug\MathFlash.csprojResolveAssemblyReference.cache
-C:\Users\mursa_000\Desktop\Kakapo\Week2\5\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\obj\Debug\MathFlash.exe
-C:\Users\mursa_000\Desktop\Kakapo\Week2\5\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\obj\Debug\MathFlash.pdb
-C:\Users\mursa_000\Desktop\Kakapo\Week2\5\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\bin\Debug\MathFlash.exe.config
-C:\Users\mursa_000\Desktop\Kakapo\Week2\5\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\bin\Debug\MathFlash.exe
-C:\Users\mursa_000\Desktop\Kakapo\Week2\5\KakapaGroupProjectSharpWeek2\MathFlash\MathFlash\bin\Debug\MathFlash.pdb
