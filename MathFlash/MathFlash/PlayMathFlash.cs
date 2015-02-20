@@ -30,7 +30,6 @@ namespace MathFlash
             while (_userSays != "")
             {
                 _userSays = view.UserPlay(_operator, _number1, _number2);
-                CheckInput();
                 while (_userSays != _answer.ToString())
                 {
                     if (_attempts != 3) { _userSays = view.Incorrect(); _attempts++; }
@@ -68,17 +67,6 @@ namespace MathFlash
         {
             _number1 = rnd.Next(0, 9);
             _number2 = rnd.Next(0, 9);
-        }
-        public void CheckInput()
-        {
-            if (_userSays == "previous")
-            { Previous(); }
-        }
-        public void Previous()
-        {
-            _number1 = _MathFlash[_MathFlash.Count - 2].Number1;
-            _number2 = _MathFlash[_MathFlash.Count - 2].Number2;
-            _answer = _MathFlash[_MathFlash.Count - 2].Answer;
         }
         
     }

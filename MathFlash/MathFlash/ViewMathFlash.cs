@@ -42,5 +42,14 @@ namespace MathFlash
             Console.WriteLine(Environment.NewLine+"OOPS!! Something went wrong please re-enter selection.");
         }
 
+        public void WriteFinalScore(int question, int score, int attempts)
+        {
+            Console.WriteLine("Your final score is {0} out of {1}", score, question);
+            Console.WriteLine("With {0} attempts",attempts);
+            Console.WriteLine();
+            Console.WriteLine("==============Metrics==============");
+            Console.WriteLine("Percentage: {0}", score/question*100);
+            Console.WriteLine("HitRate: {0}", attempts/question);
+        }
     }
 }
