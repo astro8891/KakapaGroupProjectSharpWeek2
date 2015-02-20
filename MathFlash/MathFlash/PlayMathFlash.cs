@@ -21,6 +21,7 @@ namespace MathFlash
 
         public void Run()
         {
+            view.HelloUser();
             _operator = view.GetOperator();
             if (_operator != "+" && _operator != "-") { _operator = view.GetOperator(); }
             RandomNum();
@@ -29,12 +30,7 @@ namespace MathFlash
             while (_userSays != "")
             {
                 _userSays = view.UserPlay(_operator, _number1, _number2);
-
-                if ()
-                {
-                    
-                }
-
+                CheckInput();
                 while (_userSays != _answer.ToString())
                 {
                     if (_attempts != 3) { _userSays = view.Incorrect(); _attempts++; }
@@ -61,14 +57,6 @@ namespace MathFlash
                 case "-":
                     _answer = _number1 - _number2;
                     break;
-                case "previous":
-                     _number1 = _MathFlash[_MathFlash.Count - 1].Number1;
-                     _number2 = _MathFlash[_MathFlash.Count - 1].Number2;
-                     _answer = _MathFlash[_MathFlash.Count - 1].Answer;
-                    break;
-                //case "next":
-                    
-                //    break;
                 default:
                     view.InputError();
                     _operator = view.GetOperator();
@@ -81,9 +69,16 @@ namespace MathFlash
             _number1 = rnd.Next(0, 9);
             _number2 = rnd.Next(0, 9);
         }
-        public bool CheckInput(string userinput)
+        public void CheckInput()
         {
-
+            if (_userSays == "previous")
+            { Previous(); }
+        }
+        public void Previous()
+        {
+            _number1 = _MathFlash[_MathFlash.Count - 2].Number1;
+            _number2 = _MathFlash[_MathFlash.Count - 2].Number2;
+            _answer = _MathFlash[_MathFlash.Count - 2].Answer;
         }
         
     }

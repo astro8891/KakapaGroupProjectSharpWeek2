@@ -13,6 +13,7 @@ namespace MathFlash
             Console.WriteLine("Hello user! Welcome to our Mathflash Game!");
             Console.WriteLine("This game has certain rules, they are as follows:");
             Console.WriteLine("You may choose to play with addition or subtraction.");
+            Console.WriteLine("Please only enter digits or 'previous' to answer the previous question asked.");
             Console.WriteLine("");
         }
         public string GetOperator()
@@ -29,7 +30,6 @@ namespace MathFlash
         public string Incorrect()
         {
             Console.WriteLine(Environment.NewLine+"Incorrect! Try again.");
-            Console.WriteLine("It has to be a number between 0-9 or 'previous'");
             return Console.ReadLine();
         }
         public void Correct()
