@@ -31,6 +31,8 @@ namespace MathFlash
         {
             Console.WriteLine("");
             Console.WriteLine("Incorrect! Try again.");
+            Console.WriteLine("It has to be a number between 0-9");
+          
             return Console.ReadLine();
         }
         public void Correct()

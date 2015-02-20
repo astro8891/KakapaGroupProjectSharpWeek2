@@ -10,28 +10,34 @@ namespace MathFlash
     {
         Random rnd = new Random();
         ViewMathFlash view = new ViewMathFlash();
-<<<<<<< HEAD
         List<MathFlash> _MathFlash = new List<MathFlash>();
-        string Operator;
-        string UserSays;
-        int number1;
-        int number2;
-        int Answer;
-        int Attempts;
+
+        string _operator;
+        string _userSays;
+        int _number1;
+        int _number2;
+        int _answer;
+        int _attempts;
 
         public void Run()
         {
-            Operator = view.GetOperator();
-            if (Operator != "+" && Operator != "-") { Operator = view.GetOperator(); }
+            _operator = view.GetOperator();
+            if (_operator != "+" && _operator != "-") { _operator = view.GetOperator(); }
             AddToList();
             GetAnswer();
-            while (UserSays != "")
+            while (_userSays != "")
             {
-                UserSays = view.UserPlay(Operator, number1, number2);
-                while (UserSays != Answer.ToString())
+                _userSays = view.UserPlay(_operator, _number1, _number2);
+
+                if ()
                 {
-                    if (Attempts != 3) { UserSays = view.Incorrect(); Attempts++; }
-                    else { Attempts = 0; goto NextProb; }
+                    
+                }
+
+                while (_userSays != _answer.ToString())
+                {
+                    if (_attempts != 3) { _userSays = view.Incorrect(); _attempts++; }
+                    else { _attempts = 0; goto NextProb; }
                 }
                 view.Correct();
             NextProb: ;
@@ -41,19 +47,19 @@ namespace MathFlash
         }
         public void AddToList()
         {
-            number1 = RandomNum();
-            number2 = RandomNum();
-            _MathFlash.Add(new MathFlash(Operator, number1, number2, Answer));
+            _number1 = RandomNum();
+            _number2 = RandomNum();
+            _MathFlash.Add(new MathFlash(_operator, _number1, _number2, _answer));
         }
         public void GetAnswer()
         {
-            switch (Operator)
+            switch (_operator)
             {
                 case "+":
-                    Answer = number1 + number2;
+                    _answer = _number1 + _number2;
                     break;
                 case "-":
-                    Answer = number1 - number2;
+                    _answer = _number1 - _number2;
                     break;
             }
         }
@@ -62,14 +68,11 @@ namespace MathFlash
             return rnd.Next(0, 9);
         }
 
-=======
-        List<MathFlash> _FlashMath = new List<MathFlash>();
-
-        public void Run()
+        public bool CheckInput(string userinput)
         {
-            //runs the program
 
         }
->>>>>>> 91fc4267dc8ed790a769604c7bb0090f37519859
+         
+     
     }
 }
