@@ -10,6 +10,7 @@ namespace MathFlash
     {
         Random rnd = new Random();
         ViewMathFlash view = new ViewMathFlash();
+<<<<<<< HEAD
         List<MathFlash> _MathFlash = new List<MathFlash>();
         string Operator;
         string UserSays;
@@ -61,5 +62,14 @@ namespace MathFlash
             return rnd.Next(0, 9);
         }
 
+=======
+        List<MathFlash> _FlashMath = new List<MathFlash>();
+
+        public void Run()
+        {
+            //runs the program
+
+        }
+>>>>>>> 91fc4267dc8ed790a769604c7bb0090f37519859
     }
 }
