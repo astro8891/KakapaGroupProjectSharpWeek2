@@ -22,21 +22,23 @@ namespace MathFlash
         }
         public string UserPlay(string op, int num1, int num2)
         {
-            Console.WriteLine("");
-            Console.WriteLine("Question:");
+            Console.WriteLine(Environment.NewLine+"Question:");
             Console.WriteLine("{0} {1} {2}", num1, op, num2);
             return Console.ReadLine();
         }
         public string Incorrect()
         {
-            Console.WriteLine("");
-            Console.WriteLine("Incorrect! Try again.");
+            Console.WriteLine(Environment.NewLine+"Incorrect! Try again.");
             return Console.ReadLine();
         }
         public void Correct()
         {
-            Console.WriteLine("");
-            Console.WriteLine("Correct!!");
+
+            Console.WriteLine(Environment.NewLine+"Correct!!");
+        }
+        public void InputError()
+        {
+            Console.WriteLine(Environment.NewLine+"OOPS!! Something went wrong please re-enter selection.");
         }
 
     }

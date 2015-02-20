@@ -10,7 +10,6 @@ namespace MathFlash
     {
         Random rnd = new Random();
         ViewMathFlash view = new ViewMathFlash();
-<<<<<<< HEAD
         List<MathFlash> _MathFlash = new List<MathFlash>();
         string Operator;
         string UserSays;
@@ -22,9 +21,10 @@ namespace MathFlash
         public void Run()
         {
             Operator = view.GetOperator();
-            if (Operator != "+" && Operator != "-") { Operator = view.GetOperator(); }
-            AddToList();
+            //if (Operator != "+" && Operator != "-") { Operator = view.GetOperator(); }
+            RandomNum();
             GetAnswer();
+            AddToList();
             while (UserSays != "")
             {
                 UserSays = view.UserPlay(Operator, number1, number2);
@@ -35,14 +35,13 @@ namespace MathFlash
                 }
                 view.Correct();
             NextProb: ;
-                AddToList();
+                RandomNum();
                 GetAnswer();
+                AddToList();
             }
         }
         public void AddToList()
         {
-            number1 = RandomNum();
-            number2 = RandomNum();
             _MathFlash.Add(new MathFlash(Operator, number1, number2, Answer));
         }
         public void GetAnswer()
@@ -55,21 +54,26 @@ namespace MathFlash
                 case "-":
                     Answer = number1 - number2;
                     break;
+                case "previous":
+                     number1 = _MathFlash[_MathFlash.Count - 1].Number1;
+                     number2 = _MathFlash[_MathFlash.Count - 1].Number2;
+                     Answer = _MathFlash[_MathFlash.Count - 1].Answer;
+                    break;
+                //case "next":
+                    
+                //    break;
+                default:
+                    view.InputError();
+                    Operator = view.GetOperator();
+                    GetAnswer();
+                    break;
             }
         }
-        public int RandomNum()
+
+        public void RandomNum()
         {
-            return rnd.Next(0, 9);
+            number1 = rnd.Next(0, 9);
+            number2 = rnd.Next(0, 9);
         }
-
-=======
-        List<MathFlash> _FlashMath = new List<MathFlash>();
-
-        public void Run()
-        {
-            //runs the program
-
-        }
->>>>>>> 91fc4267dc8ed790a769604c7bb0090f37519859
     }
 }
